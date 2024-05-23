@@ -1,0 +1,11 @@
+/* .show{
+    display: grid;
+    grid-template-columns: repeat(4,220px);
+} */
+
+@media screen  and (max-width:480px){
+    h5,p{
+        font-size:10px;
+    }
+ 
+}

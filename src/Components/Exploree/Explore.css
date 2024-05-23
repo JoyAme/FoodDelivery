@@ -1,0 +1,16 @@
+.Exploree{
+    width:80%;
+    margin: auto;
+}
+.circle{
+    border-radius: 999px;
+   width:100%;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+@media screen  and (max-width:480px){
+    p{
+        font-size:10px;
+    }
+}

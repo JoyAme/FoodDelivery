@@ -1,0 +1,22 @@
+.header{
+    background-image: url('../../image/header_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height:34vw; */
+    width:80%;
+    position: relative;
+    margin: auto;
+}
+.comb{
+    width:70%;
+    margin: auto;
+
+}
+
+@media screen and (max-width:480px) {
+   .header{
+    height: 56vh;
+    
+   } 
+}

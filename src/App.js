@@ -7,13 +7,17 @@ import Mobile from './pages/Mobileapp/Mobile';
 import Navbar from './Components/Navv/Navbar';
 import Cartt from './pages/Cart/Cartt';
 import Foot from './pages/Footer/Foot';
+import { useState } from 'react';
+import Login from './Components/Login/Login';
 
 
 function App() {
+  const [show,setShow]=useState(false)
   return (
     <>
     <BrowserRouter>
-    <Navbar/>
+    {show ? <Login/> : <></>}
+    <Navbar setShow={setShow}/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='menu' element={<Menu/>}/>

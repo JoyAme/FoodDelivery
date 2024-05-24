@@ -16,10 +16,10 @@ const ExploreMenu = ({category,setCategory}) => {
             {
                 Foods.map((food)=>{
                     return(
-                        <div className='' >
-                            <div className='flex flex-col items-center' onClick={()=>setCategory((prev)=>prev === food.menu_name ?"All" && 'circle':food.menu_name)}>
+                        <div className='cursor-pointer lg:cursor-pointer' >
+                            <div className='flex flex-col gap-3 items-center' onClick={()=>setCategory((prev)=>prev === food.menu_name ?"All" && 'circle':food.menu_name)}>
                             <img className={category === food.menu_name ? 'circle' : ''} src={food.menu_image} alt='name'/>
-                            <p className=' mt-3 lg:mt-2 text-slate-500  lg:text-3sm'>{food.menu_name}</p>
+                            <p className=' mt-3 lg:mt-2 text-sm text-slate-500  lg:text-3sm'>{food.menu_name}</p>
                            </div>
                         </div>
                         // border-4 rounded-full border-orange-500 max-w-12 lg:max-w-60 cursor-pointer

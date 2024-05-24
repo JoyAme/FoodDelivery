@@ -6,7 +6,7 @@ import { useContext, useState } from 'react'
 import './Navbarr.css'
 import { StoreContext } from '../Context/StoreContext'
 
-const Navbar = () => {
+const Navbar = ({setShow}) => {
     const [menu,setMenu]=useState("home")
     const {getTotalItems}=useContext(StoreContext)
   return (
@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className={getTotalItems() === 0 ? '': 'ready'}></div>
         </div>
 
-        <button className='bg-white-500  text-blue-900 bg-slate-100 hover:bg-red-300 border-blue-900 border-2 mr-4  px-4 py-1/2 rounded-full'>sign in</button>
+        <button onClick={()=>setShow(true)} className='bg-white-500  text-blue-900 bg-slate-100 hover:bg-red-300 border-blue-900 border-2 mr-4  px-4 py-1/2 rounded-full'>sign in</button>
       </div>
     </div>
     </>

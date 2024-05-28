@@ -4,13 +4,27 @@
 }
 .circle{
     border-radius: 999px;
-   width:100%;
+   max-width:100%;
     border: 2px solid orange;
     cursor: pointer;
+   
+}
+#circle{
+    overflow-x: scroll;
+    /* margin: 20px 0; */
+    gap: 20px;
+   
+}
+#exp{
+    width:7.5vw;
+    min-width: 60px;
 }
 
+#circle::-webkit-scrollbar{
+    display:none;
+}
 @media screen  and (max-width:480px){
     p{
-        font-size:10px;
+        /* font-size:10px; */
     }
 }

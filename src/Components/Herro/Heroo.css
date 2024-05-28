@@ -2,21 +2,37 @@
     background-image: url('../../image/header_img.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    /* height:34vw; */
+    background-size: contain;
+    height:34vw;
     width:80%;
     position: relative;
     margin: auto;
 }
 .comb{
-    width:70%;
-    margin: auto;
-
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap:1.5vw;
+  align-items: start;
+  max-width: 50%;
+ bottom: 10%;
+ left:6vw;
 }
 
-@media screen and (max-width:480px) {
-   .header{
-    height: 56vh;
+@media screen and (max-width:640px) {
+    .small{
+        display: none;
+    }
+   /* .small{
+    font-size: 9px;
     
+   }
+   .big{
+    font-size: 12px;
+   
    } 
+   .btn{
+    padding:5px 5px;
+    font-size: 10px;
+   } */
 }

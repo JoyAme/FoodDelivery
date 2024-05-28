@@ -6,7 +6,7 @@ const Login = ({setShow}) => {
     const [sign,setSign]=useState('Login')
   return (
     <div className='body'>
-        <form className='Form rounded'>
+        <form className='Form rounded sm:w-96'>
         <div className='flex justify-between'>
         <h1 className='text-black lg:text-xl font-bold'>{sign}</h1>
           <img onClick={()=> setShow()} className='lg:w-3 object-contain cursor-pointer' src={Close} alt='closebtn'/>

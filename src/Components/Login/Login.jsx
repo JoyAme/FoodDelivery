@@ -6,16 +6,16 @@ const Login = ({setShow}) => {
     const [sign,setSign]=useState('Login')
   return (
     <div className='body'>
-        <form className='Form rounded sm:w-96'>
+        <form className='Form rounded sm:w-100'>
         <div className='flex justify-between'>
         <h1 className='text-black lg:text-xl font-bold'>{sign}</h1>
-          <img onClick={()=> setShow()} className='lg:w-3 object-contain cursor-pointer' src={Close} alt='closebtn'/>
+          <img  className='lg:w-3 object-contain  cursor-pointer' onClick={()=> setShow(false)} src={Close} alt='closebtn'/>
         </div>
       
       <div className='flex flex-col gap-5'>
-        {sign ==='Login' ? <></>: <input className='border rounded border-black py-2'/>}
-         <input className='border rounded border-black py-2'/>
-         <input className='border rounded border-black py-2'/>
+        {sign ==='Login' ? <></>: <input type='text'className='border  rounded border-black py-2 px-2' placeholder='Name'/>}
+         <input type='text' className='border rounded border-black py-2 px-2' placeholder='Email'/>
+         <input type='password' className='border rounded border-black py-2 px-2' placeholder='Password'/>
        
        
      </div>

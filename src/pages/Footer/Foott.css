@@ -1,7 +1,29 @@
 .Tomato{
-    width:80%;
-    margin: auto;
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   gap:80px;
+   width: 80%;
+   margin: auto;
 }
-.flext{
-    display: flex;
+.image{
+    width:90px ;
+}
+/* .flext{
+  display: grid;
+} */
+.line{
+    border: none;
+    width:100%;
+    margin: 20px 0;
+    height: 2px;
+    background-color: bisque;
+}
+
+
+@media screen and (max-width:640px){
+    .Tomato{
+        display: flex;
+        flex-direction: column;
+        gap:35px;
+    }
 }

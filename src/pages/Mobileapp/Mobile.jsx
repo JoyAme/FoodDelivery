@@ -1,5 +1,6 @@
 import Apple from '../../image/app_store.png'
 import Playstore from '../../image/play_store.png'
+
 import './Mobil.css'
 
 const Mobile = () => {
@@ -10,6 +11,7 @@ const Mobile = () => {
         <img className='w-24 object-contain lg:w-52' src={Playstore} alt='google'/>
         <img className='w-24 object-contain lg:w-52'src={Apple} alt='google'/>
       </div>
+      
     </div>
   )
 }

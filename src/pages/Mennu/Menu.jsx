@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ExploreMenu from '../../Components/Exploree/ExploreMenu'
+import FoodDisplay from '../../Components/Foodshow/FoodDisplay'
+
+import Foot from '../Footer/Foot'
 
 const Menu = () => {
+  const [category,setCategory]=useState("All")
   return (
     <div>
-      <h1>Menu</h1>
+      <ExploreMenu category={category} setCategory={setCategory}/>
+      <FoodDisplay category={category}/>  
+      <Foot/>
     </div>
   )
 }

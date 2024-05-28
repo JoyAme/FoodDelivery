@@ -8,8 +8,8 @@ const Login = ({setShow}) => {
     <div className='body'>
         <form className='Form rounded sm:w-100'>
         <div className='flex justify-between'>
-        <h1 className='text-black lg:text-xl font-bold'>{sign}</h1>
-          <img  className='lg:w-3 object-contain  cursor-pointer' onClick={()=> setShow(false)} src={Close} alt='closebtn'/>
+        <h1 className='text-black text-xl lg:text-xl font-bold'>{sign}</h1>
+          <img  className='lg:w-3 object-contain w-3 cursor-pointer' onClick={()=>setShow(false)} src={Close} alt='closebtn'/>
         </div>
       
       <div className='flex flex-col gap-5'>
@@ -22,7 +22,7 @@ const Login = ({setShow}) => {
 
         <button className='bg-red-500 rounded lg:text-xl text-white py-2' onClick={()=>setSign()}>{sign === 'signup'?'Create account': 'login'}</button>
         {
-            sign === 'signup'? <p>kindly Login in here<span className='text-red-500 font-bold cursor-pointer' onClick={()=>setSign("Login")}>Login</span></p>
+            sign === 'signup'? <p>kindly Login in here <span className='text-red-500 font-bold cursor-pointer' onClick={()=>setSign("Login")}>Login</span></p>
             : 
             <p className=''>Create an account <span className='text-red-500 font-bold cursor-pointer' onClick={()=>setSign("signup")}>Signup</span></p>
             

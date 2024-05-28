@@ -17,10 +17,10 @@ const Navbar = ({setShow}) => {
         </div>
         <nav className='hidden lg:block'>
       <ul className='flex gap-5 '>
-        <a href='/' onClick={()=>setMenu("home")} id={menu === 'home'? "active" : ""} className="text-blue-900 font-bold" to='/'><li>home</li></a>
-        <a href='Hero.jsx' onClick={()=>setMenu("menu")} id={menu === 'menu'? "active" : ""} className=" text-blue-900 font-bold" to='menu'><li>menu</li></a>
-        <a href='mobile' onClick={()=>setMenu("mobile-app")} id={menu === 'mobile-app'? "active" : ""} className=" text-blue-900 font-bold" to='mobile'><li>mobile app</li></a>
-        <a href='contact' onClick={()=>setMenu("contact")} id={menu === 'contact'? "active" : ""} className=" text-blue-900 font-bold" to='contact'><li>contact us</li></a>
+        <Link to='/' onClick={()=>setMenu("home")} id={menu === 'home'? "active" : ""} className="text-blue-900 font-bold" ><li>home</li></Link>
+        <Link to='menu' onClick={()=>setMenu("menu")} id={menu === 'menu'? "active" : ""} className=" text-blue-900 font-bold" ><li>menu</li></Link>
+        <Link to='mobile' onClick={()=>setMenu("mobile-app")} id={menu === 'mobile-app'? "active" : ""} className=" text-blue-900 font-bold" ><li>mobile app</li></Link>
+        <Link to='contact' onClick={()=>setMenu("contact")} id={menu === 'contact'? "active" : ""} className=" text-blue-900 font-bold" ><li>contact us</li></Link>
       </ul>
       </nav>
       <div className='flex items-center gap-5'>
